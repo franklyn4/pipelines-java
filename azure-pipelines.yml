@@ -3,6 +3,7 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+
 steps:
 - task: PublishBuildArtifacts@1
   inputs:
@@ -12,7 +13,7 @@ steps:
 
 
 # Maven
-steps:
+
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
